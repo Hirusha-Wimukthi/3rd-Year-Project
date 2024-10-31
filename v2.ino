@@ -55,6 +55,7 @@ void WIFI_INIT() {
     Serial.print("Connecting to WiFi");
     while (WiFi.status() != WL_CONNECTED) {
         Serial.print("#");
+        Serial.print("connecting");
         delay(400);
     }
     Serial.print(" ");
